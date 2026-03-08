@@ -4,9 +4,12 @@
         <title>AB Electrical</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
 <body>
     <header class="topbar">
+        <h1>Professional Electrical Services in West Los Angeles</h1>
         <nav class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -44,8 +47,22 @@
         </nav>
     </header>
     <main>
-        <h1>Professional Electrical Services in West Los Angeles</h1>
-        <img src="images/abelectrical.png" alt="Electrical Teamwork" class="heroImage">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/swiperimage1.jpg" alt="Electrical Work" class="slide-img1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/swiperimage2.png" alt="Electrical Work" class ="heroImage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/swiperimage3.jpeg" alt="Electrical Work" class="heroImage">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
         <p>With over 20 years of industry experience and knowledge, there isn't a situation our team hasn't seen yet or handled. But we're always prepared just in case that time comes</p>
         <p></p>
     </main>
@@ -64,5 +81,23 @@
     </div>
   </div>
   <script src="customersignin.js"></script>
+  <!----Swiper JS --- Necessary for Sliding Hero images-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!----Internalizing Swiper (Image transition affect)------------>
+  <script>
+    var swiper = new Swiper (".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+  </script>
 </body>
+
 </html>
