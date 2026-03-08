@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Electrical Services</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header class="topbar">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="/Services/services.html">Services</a>
+                    <div class="drop-downcontent">
+                        <a href="/services/residential_electrical.html">Residential Electrical</a>
+                        <a href="/services/commercial_electrical.html">Commercial Electrical</a>
+                        <a href="/services/panel_upgrades.html">Panel Upgrades</a>
+                        <a href="/services/evcharging_electrical.html">EV Charging Installation</a>
+                        <a href="/services/lighting_installations.html">Lighting Installation</a>
+                        <a href="/services/electrical_troubleshooting.html">Electrical Troubleshooting</a>
+                        <a href="/services/emergency.html">Emergency Electrical Service</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/servicing-areas/servicing_areas.html">Cities Serviced</a>
+                    <div class="drop-downcontent">
+                        <a href="/servicing-areas/west_los_angeles.html">West Los Angeles</a>
+                        <a href="/servicing-areas/santamonica.html">Santa Monica</a>
+                        <a href="/servicing-areas/venice_beach.html">Venice Beach</a>
+                        <a href="/servicing-areas/malibu.html">Malibu</a>
+                        <a href="/servicing-areas/westwood.html">Westwood</a>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="callnow.html">Call Now</a></li>
+            </ul>
+            <div id="signIn" class ="SignIn">
+             <button type="button" onclick="signIn()" class="icon-btn">
+             <i class="fa-solid fa-circle-user"></i>
+            </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1><strong>Contact Us</strong></h1>
+    </main>
+<!---LOG IN WINDOW AFTER CLICKING BUTTON AKA MODAL-->
+  <div id="signInModal" class="modal">
+    <!--CONTENT OF THE MODAL-->
+    <div class="modal-content">
+      <form action="#">
+        <label for="email">Please enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Sign In">
+        <span onclick="closeModal()" class="close">&times;</span>
+      </form>
+    </div>
+  </div>
+  <script src="customersignin.js"></script>
+</body>
+</html>
