@@ -70,6 +70,13 @@ h1 {
 .dropdown:hover .drop-downcontent {
   display: block;
 }
+/* ==== LEFT SIDE LOGO === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 0 auto;
+}
 
 /* ==== RIGHT SIDE NAV BAR SELECTION === */
 .signInAndCart {
