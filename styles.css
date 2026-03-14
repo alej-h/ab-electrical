@@ -40,10 +40,12 @@ h1 {
   gap: 60px;
 
   flex: 1; /* keeps menu centered */
+  font-size: 25px;
 }
 
 .nav a, .dropdown > span {
   color: #D4A017;
+  font-size: 25px;
 }
 
 .nav a:hover {
@@ -122,9 +124,9 @@ h1 {
 .dropdown > span {
     font-family: 'Bebas Neue', sans-serif;
     background: #111;
-    color: #fff;
+    color: #D4A017;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 25px;
     cursor: default;
 }
 
