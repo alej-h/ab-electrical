@@ -1,6 +1,6 @@
 /* ===== RESET ===== */
 body {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', 'Russo One';
   background: #fff;
   color: #111;
 }
@@ -9,7 +9,9 @@ body {
 /* ===== NAV ===== */
 h1 {
   text-align: center;
-  color:#fff
+  /*===== GIVES HEADER TRANSITIONING COLORS====*/
+  background-image: linear-gradient(to right, rgb(212, 160, 23), rgb(166, 61, 47));
+  font-family: 'Russo One';
 }
 .topbar {
   background: #111;
