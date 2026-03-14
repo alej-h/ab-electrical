@@ -1,7 +1,7 @@
 /* ===== RESET ===== */
 body {
-  font-family: 'Bebas Neue', 'Russo One';
-  background: #fff;
+  font-family: 'Russo One';
+  background: white;
   color: #111;
 }
 
@@ -10,9 +10,13 @@ body {
 h1 {
   text-align: center;
   /*===== GIVES HEADER TRANSITIONING COLORS====*/
-  background-image: linear-gradient(to right, rgb(212, 160, 23), rgb(166, 61, 47));
+  background-image: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
   font-family: 'Russo One';
+  font-size: 50px;
+  padding: 20px;
 }
+
+
 .topbar {
   background: #111;
   border-bottom: 4px solid #D4A017;
@@ -22,6 +26,7 @@ h1 {
   display: flex;
   padding: 14px 18px;
   align-items: center;
+  color: #321a0b;
 }
 
 .nav ul {
@@ -133,7 +138,7 @@ h1 {
 
 .swiper {
   width: 100%;
-  height: 500px;
+  height: 850px;
 }
 
 .swiper-slide {
@@ -145,16 +150,61 @@ h1 {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  height: 500px;
+  height: 850px;
 }
 .slide-img1 {
   object-position: top;
   object-fit: cover;
-  height: 500px;
+  height: 850px;
+}
+
+.slide-img2 {
+  object-position: bottom;
 }
 .swiper-button-next{
   z-index: 10
 }
 .swiper-button-prev{
   z-index: 10
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+section.flexbox-container {
+  display: flex;
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  padding: flex;
+  text-align: center;  
+  font-size: 30px;
+  justify-content: space-between;
+}
+.flexbox-item {
+  flex: 1;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+  padding: 40px 20px;
+  background-image: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+}
+
+.flexbox-item-1 {
+  
+}
+
+.flexbox-item-2 {
+
+}
+
+.flexbox-item-2 img {
+  width: 500px;
+  height: auto;
+}
+
+.flexbox-item-3 {
+  
 }
