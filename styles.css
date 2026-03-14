@@ -74,8 +74,12 @@ h1 {
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-left: 0 auto;
+  gap: 80px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
 }
 
 /* ==== RIGHT SIDE NAV BAR SELECTION === */
