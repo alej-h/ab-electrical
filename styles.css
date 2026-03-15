@@ -19,7 +19,7 @@ h1 {
 
 
 .topbar {
-  background: #111;
+  background: #2a2a2a;
   border-bottom: 4px solid #D4A017;
 }
 
@@ -88,7 +88,7 @@ h1 {
 }
 
 .logo img {
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
@@ -98,7 +98,10 @@ h1 {
   align-items: center;
   gap: 16px;
   margin-left: auto; /* pushes to the far right */
-  
+}
+
+.icon-btn {
+  width: auto;
 }
 
 .modal {
@@ -123,11 +126,9 @@ h1 {
   width: 15%;
 }
 .dropdown > span {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Russo One';
     background: #111;
     color: #D4A017;
-    text-transform: uppercase;
-    font-size: 25px;
     cursor: default;
 }
 
@@ -178,13 +179,14 @@ main {
 
 section.flexbox-container {
   display: flex;
-  background-color: black;
+  background-color: 2a2a2a;
   margin: 0 auto;
   width: 100%;
   padding: flex;
   text-align: center;  
   font-size: 30px;
   justify-content: space-between;
+  height: 18em;
 }
 .flexbox-item {
   flex: 1;
@@ -193,6 +195,7 @@ section.flexbox-container {
   background-color: #dfdfdf;
   padding: 10px 5px;
   background-image: linear-gradient(to right, #e4b047, #cb7a3b, #b84c38);
+  border-radius: 25px;
 }
 
 .flexbox-item-1 {
@@ -208,11 +211,45 @@ section.flexbox-container {
   height: auto;
 }
 
-.flexbox-item-3 {
-  
+.flexbox-item-2 h2 {
+  margin-block-start: 0;
+  margin-block-end: 0.25em;
+}
+
+.flexbox-item-2 .bondnumber {
+  margin-block-end: 0;
 }
 
 section.introduction {
+  font-family: 'Monsterrat';
   font-size: 30px;
-  background-color:white;
+  padding: 60px 80px;
+  background-color: #321a0b;
+  color: white;
+}
+
+section.introduction h2.introductionheader {
+  font-family: 'Russo One';
+}
+
+section.servicesoffered {
+  background: linear-gradient(to right, #8a6520, #7a4a22, #6b2d21);
+  font-family: 'Monsterrat';
+  font-size: 30px;
+  padding: 60px 80px;
+}
+
+section.servicesoffered h2.servicesheader {
+  font-family: 'Russo One';
+}
+
+section.whoweare {
+  background: #ede8e0;
+  font-family: 'Monsterrat';
+  font-size: 30px;
+  padding: 60px 80px;
+}
+
+section.whoweare h2.whoweareheader {
+  font-family: 'Russo One';
 }
